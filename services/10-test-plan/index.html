@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Test Plan"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="Jekyll Serif" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="Jekyll Serif" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Test Plan</h1>
+        <div class="content"><p>A plan for evaluating the functionality of the prototype to verify that all performance objectives and specifications have been met.</p>
+
+<p>Once the prototype is made, testing the functionality of the device can be implemented by a testing pass/fail list. This list not only has individual requirements, but compounded requirements where two functions might integrate. While it may be impossible to test all configurations of compounding functions, a good general umbrella test should also be implemented. Such as data transfer rate at specific battery levels, not all battery levels.</p>
+
+<h2 id="functions-to-be-tested-with-testing-parameters">Functions to be tested with testing parameters:</h2>
+
+<h3 id="power-onoff-button">Power on/off button</h3>
+<p>The power on/off button should be tested at different battery levels: fully charged, half way, depleted, and deep discharge of battery. The power on/off button should work in the fully charged and halfway mark. In the depleted mark there should be a red LED flashing indicator of low power. In the deep discharge this LED will not have the power to blink.</p>
+
+<h3 id="menu-navigator-buttons">Menu Navigator buttons</h3>
+<p>These buttons are used in setup and connect mode. While performing setup and connect mode all software accessible modes are to be selected. This includes having multiple devices that use the same bluetooth connection methods in active mode in order to determine device choice selection.</p>
+
+<h3 id="jtag--readout">JTAG  Readout</h3>
+<p>JTAG is used only internally for debugging. When JTAG is connected, all software status should be readable and an automated check for all possible status should be collected.</p>
+
+<h3 id="sensor-data-collection">Sensor data collection</h3>
+<p>Via JTAG a manually connection should be able to pull the most recent data. This is to be compared to the same data with the same time stamp via bluetooth connection.  This should be done at 3 battery levels. Full, half way, and 10% usable battery remaining.</p>
+
+<h3 id="battery-charger">Battery Charger</h3>
+<p>The system should be tested against various commonly available charging devices. This includes, under voltage, over voltage, under current and over current. The device shall specify a set low current, with a voltage range. The device shall not be internally damageable via leaving the device on the charger.</p>
+
+<h3 id="sensor-sensitivity">Sensor sensitivity</h3>
+<p>The sensor works best while in direct contact with the skin. While movement occurs with the device, data can become discontinuous. The system shall ‘smooth’ this data so that discrete falls and jumps under 0.25 seconds  by brief separation do not become ‘true’ data inputs. While this is a default state the device shall be in, it can be turned off for specific requirements by VR developers.</p>
+
+<h3 id="thermal-heat">Thermal Heat</h3>
+<p>While the device is under various working loads. Thermal readings shall be taken and not surpassed by UL device specifications. This includes testing with a neighboring heat source at 98.6 F (human). As well as common temperature ranges between 40 - 115 F, and humidity conditions between 0 -100%. Benchmarked each 25 degree temperature change with a 20% humidity change. Note: this is 3 different temperature set points, each with 5 different humidity values.</p>
+
+<h3 id="vr-connections">VR connections</h3>
+<p>The device shall be tested connected with the top 5 VR headsets purchasable. While they all should use the same standard for bluetooth. These should be validated.</p>
+
+<h3 id="breakaway-clip">Breakaway clip</h3>
+<p>Because the device is secured around the neck, the clip has a max ‘breakaway’ force of 5 lbs. This should be tested and true for vertical and horizontal pull forces. The most common direction being horizontal with a set design value of 5 lbs and vertical being able to decrease to 3lbs, but not to increase by more than 6 lbs.</p>
+
+<h3 id="cycling-buttons">Cycling buttons</h3>
+<p>Buttons should be machine cycled to last for 10,000 cycles minimum. But testing until failure to create known data failure points. The same testing should be done in the various temperature and humidity conditions as the thermal heat testing.</p>
+
+<h3 id="power-cycle">Power cycle</h3>
+<p>The device shall be power cycled and designed to last a minimum of 5000 times. But should be done until failure. The same testing should be done in the various temperature and humidity conditions as the thermal heat testing.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Jekyll Serif</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/zerostaticthemes/jekyll-serif-theme" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/zerostaticio" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

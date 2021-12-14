@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>System Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="System Design"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="120px" height="32px" alt="Jekyll Serif" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="Jekyll Serif" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">System Design</h1>
+        <div class="content"><p>The system device can be subdivided into three categories and their integration. The three categories are: mechanical components, electrical components, and software components. Each subsystem can be broken down into its respective subcomponents, the process is iterative until base metrics are purchasable or finitely small actionable items.</p>
+
+<h2 id="mechanical-subsystems">Mechanical subsystems:</h2>
+<p>The mechanical subsystems include all physical components for the device as aswell as all interfaces to the device. The crossover for the mechanical subsystem also includes the hardware component integration that is designed from the electrical subsystem. Therefore the mechanical subsystem includes: plastics manufacturing for the shell, thermal cooling void space, internal mounting for the battery, internal mounting for the PCB, wiring diagram, PCB interfaces with the shell via buttons and LEDs, PCB interfaces with external power charging, external mounts to the plastic shell, strap design, strap mount, and proper design of the low force strap breakaway clip.</p>
+
+<h3 id="mechanical-implementation-of-subsystems">Mechanical implementation of subsystems:</h3>
+<p>The majority of the mechanical designs revolve around the plastic mold injected shell. Allowing the shell to be plastic model injected allows for many of the mechanical requirements to be manufactured into the product. This includes: the external shell, external strap mounts, through holes for LEDs, buttons, power input holes, battery mount, PCB mount and thermal cooling void space. A majority of the design should be ensuring that the plastic shell can meet all of these various requirements. As well as meeting all required engineering standards. This should all be done on a professional CAD such as Solidworks. The straps and clip can be designed on the same CAD program. 3D printing prototypes is a must, as it can save time and money on misdesign before mass production.</p>
+
+<h2 id="electrical-subsystems">Electrical subsystems:</h2>
+<p>The electrical subsystems include: PCB design and manufacturing, ensuring power requirements and power consumption levels are appropriate, ensuring hardware is adequate for meeting software designs, building in hardware margin for software change field updates.</p>
+
+<h3 id="electrical-implementation-of-subsystems">Electrical implementation of subsystems:</h3>
+<p>​	The majority of the electrical design is on the PCB board. Once all of the software components have dictated required hardware components, a PCB board should be designed and test manufactured by popular single board manufacturers such as JLCPCB. One all of the requirements are set forth, hardware edge testing is mandatory and revealing on product useability. A four layer board should be the standard for simplicity and cost, but other cost parameters should be taken into account for re-engineering hardware if it is economical.</p>
+
+<h2 id="software-subsystems">Software subsystems:</h2>
+<p>The software subsystems include:  data organization onboard PCB, data buffering, data transfer, implementing software to handle all trigger events, such as button pushes,  low battery, no sensor readings, and creating an expandable software base that allows for alteration and updates.</p>
+
+<h3 id="software-implementation-of-subsystems">Software implementation of subsystems:</h3>
+<p>All of the software should have a focus on speed, reliability, and useability. While programming languages like python should be used in the early design/proof of concept. The final product should be running C/C++ code. And should be designed to run in a functional way when necessary and an object oriented way when ambiguous.  The software should also accommodate future remote upgrades.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Jekyll Serif</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/zerostaticthemes/jekyll-serif-theme" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/zerostaticio" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
